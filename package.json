@@ -8,5 +8,6 @@
   },
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@7.2.1"
+  "packageManager": "pnpm@7.2.1",
+  "dependencies": {}
 }
