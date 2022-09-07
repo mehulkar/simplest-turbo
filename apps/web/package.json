@@ -1,9 +1,10 @@
 {
   "name": "web",
   "version": "1.0.0",
-  "description": "",
+  "description": "mydescription-ts1662570800795",
   "main": "index.js",
   "scripts": {
+    "build": "echo \"apps/web 'build' task\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
