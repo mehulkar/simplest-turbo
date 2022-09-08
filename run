@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ "$1" == "--del-cache" ] || [ "$1" == "-dc" ]; then
+  echo "> ⚠️  Deleting turbo cache"
+  rm -rf ./node_modules/.cache/turbo
+else
+  echo "> Keeping cache"
+fi
+
+before=$(cat apps/web/package.json | jq .description)
+node change-pkg.js
+after=$(cat apps/web/package.json | jq .description)
+if [ $before != $after ]; then
+  echo "> apps/web/package.json description changed from $before to $after"
+else
+  echo "apps/web/package.json description did not change"
+  exit 1
+fi
+
+TURBO_SRC_DIR="$HOME/dev/vercel-projects/turborepo/cli"
+echo "> Building CLI from $TURBO_SRC_DIR"
+pushd $PWD > /dev/null
+cd "$TURBO_SRC_DIR"
+make > /dev/null
+popd > /dev/null
+
+
+TURBO_FRESH_BIN="$TURBO_SRC_DIR/turbo"
+echo "> Running turbo run build from $TURBO_FRESH_BIN"
+echo "=========================="
+$TURBO_FRESH_BIN run build
+echo "=========================="
