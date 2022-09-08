@@ -1,7 +1,7 @@
 {
   "name": "web",
   "version": "1.0.0",
-  "description": "mydescription-ts1662570800795",
+  "description": "mydescription-ts1662593551048",
   "main": "index.js",
   "scripts": {
     "build": "echo \"apps/web 'build' task\"",

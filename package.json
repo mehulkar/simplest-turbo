@@ -1,7 +1,7 @@
 {
   "name": "simplest-turbo",
   "version": "1.0.0",
-  "description": "",
+  "description": "something changed",
   "main": "index.js",
   "scripts": {
     "build": "echo \"root 'build' task\"",
