@@ -1,6 +1,8 @@
 const fs = require("fs");
+const path = require("path");
 
-const pkg = require("./apps/web/package.json");
+const p = path.join(process.cwd(), "apps/a/package.json");
+const pkg = require(p);
 
 const newts = +Date.now();
 
@@ -12,4 +14,4 @@ if (pkg.description.match(/\-ts\d+/)) {
 
 const newpkg = JSON.stringify(pkg, null, 2);
 
-fs.writeFileSync("./apps/web/package.json", newpkg);
+fs.writeFileSync(p, newpkg);

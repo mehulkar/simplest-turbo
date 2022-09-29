@@ -9,13 +9,13 @@ else
   echo "> Keeping cache"
 fi
 
-before=$(cat apps/web/package.json | jq .description)
-node change-pkg.js
-after=$(cat apps/web/package.json | jq .description)
+before=$(cat apps/a/package.json | jq .description)
+node ./scripts/change-pkg.js
+after=$(cat apps/a/package.json | jq .description)
 if [ $before != $after ]; then
-  echo "> apps/web/package.json description changed from $before to $after"
+  echo "> apps/a/package.json description changed from $before to $after"
 else
-  echo "apps/web/package.json description did not change"
+  echo "apps/a/package.json description did not change"
   exit 1
 fi
 
