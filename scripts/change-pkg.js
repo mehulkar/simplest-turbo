@@ -1,7 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
-const p = path.join(process.cwd(), "apps/a/package.json");
+const fileName = process.argv[2];
+
+const p = path.join(process.cwd(), fileName);
 const pkg = require(p);
 
 const newts = +Date.now();
