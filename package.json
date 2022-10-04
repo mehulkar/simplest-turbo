@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "turbo run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "whatever": "echo \"This is the rootiest of root tasks\non multiple lines too!\""
   },
   "author": "",
   "license": "ISC",
