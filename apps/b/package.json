@@ -1,7 +1,7 @@
 {
   "name": "package-b",
   "version": "1.0.0",
-  "description": "mydescription-ts1665080681071",
+  "description": "mydescription-ts1665610633851",
   "main": "index.js",
   "scripts": {
     "build": "echo \"package/b 'build' task\nwhats happening here\nor here\"",
@@ -9,6 +9,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "ui": "*"
+  },
   "devDependencies": {
     "serve": "^14.0.1"
   }
