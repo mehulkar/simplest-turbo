@@ -1,7 +1,7 @@
 {
   "name": "package-b",
   "version": "1.0.0",
-  "description": "mydescription-ts1664840710065",
+  "description": "mydescription-ts1665080681071",
   "main": "index.js",
   "scripts": {
     "build": "echo \"package/b 'build' task\nwhats happening here\nor here\"",

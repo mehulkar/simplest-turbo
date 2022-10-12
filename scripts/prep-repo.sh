@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
-exit
-set -e
-
 deleteCache="false"
 changeCode="false"
-
 
 while [[ "$#" -gt 0 ]]; do
     case $1 in
@@ -16,7 +12,7 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-echo "done parsing args"
+echo "done parsing args: deleteCache:$deleteCache, changeCode:$changeCode"
 
 if [ "$deleteCache" == "true" ]; then
   echo "> ⚠️  Deleting ./node_modules/.cache/turbo"
