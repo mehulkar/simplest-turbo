@@ -1,6 +1,8 @@
 {
     "name": "ui",
     "scripts": {
-        "build": "echo \"building packages/ui\""
+        "build": "echo \"building packages/ui\"",
+        "devbroken": "echo \"devbroken packages/ui\"",
+        "devworks": "echo \"devbroken packages/ui\""
     }
 }

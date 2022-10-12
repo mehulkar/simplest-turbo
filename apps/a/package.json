@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "echo \"package/a 'build' task\nextra line output\nandanotherone\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devbroken": "echo \"devbroken packages/ui\"",
+    "devworks": "echo \"devbroken packages/ui\""
   },
   "author": "",
   "license": "ISC",

@@ -9,6 +9,13 @@
     "lint": {
       "env": ["B"]
     },
+    "devbroken": {
+      "persistent": true,
+      "dependsOn": ["^devbroken"]
+    },
+    "devworks": {
+      "persistent": true
+    },
     "//#whatever": {}
   }
 }
