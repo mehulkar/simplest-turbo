@@ -1,13 +1,13 @@
 {
-  "name": "package-a",
+  "name": "app-a",
   "version": "1.0.0",
-  "description": "mydescription-ts1665610633784",
+  "description": "mydescription-ts1665775911823",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"package/a 'build' task\nextra line output\nandanotherone\"",
+    "build": "echo \"apps/a 'build' task\nextra line output\nandanotherone\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devbroken": "echo \"devbroken packages/ui\"",
-    "devworks": "echo \"devbroken packages/ui\""
+    "devbroken": "echo \"devbroken apps/a\"",
+    "devworks": "echo \"devbroken apps/a\""
   },
   "author": "",
   "license": "ISC",
