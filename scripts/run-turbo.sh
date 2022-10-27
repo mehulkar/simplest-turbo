@@ -5,7 +5,8 @@ set -e
 TURBO_SRC_DIR="$HOME/dev/vercel/turbo/cli"
 TURBO_FRESH_BIN="$TURBO_SRC_DIR/turbo"
 verbose="false"
-task="build"
+# task="build"
+task="devbroken"
 
 while [[ "$#" -gt 0 ]]; do
     case $1 in
@@ -18,8 +19,8 @@ done
 echo "> Running turbo run $task from $TURBO_FRESH_BIN"
 echo "=========================="
 if [ "$verbose" == "true" ]; then
-  $TURBO_FRESH_BIN run "$task" --verbosity=3 --graph
+  $TURBO_FRESH_BIN run "$task" --verbosity=3
 else
-  $TURBO_FRESH_BIN run "$task" --graph=my-graph.png
+  $TURBO_FRESH_BIN run "$task"
 fi
 echo "=========================="

@@ -15,7 +15,7 @@
     },
     "devbroken": {
       "persistent": true,
-      "dependsOn": ["^devbroken", "app-b#foox"]
+      "dependsOn": ["^devbroken", "app-b#foo"]
     },
     "devworks": {
       "persistent": true
