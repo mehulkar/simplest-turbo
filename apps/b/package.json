@@ -1,12 +1,13 @@
 {
   "name": "app-b",
   "version": "1.0.0",
-  "description": "mydescription-ts1665775911890",
+  "description": "mydescription-ts1666204987062",
   "main": "index.js",
   "scripts": {
     "build": "echo \"apps/b 'build' task\nwhats happening here\nor here\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devworks": "echo \"devbroken apps/b\""
+    "devworks": "echo \"devbroken apps/b\"",
+    "foo": "echo \"devbroken apps-b#foo\""
   },
   "author": "",
   "license": "ISC",

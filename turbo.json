@@ -4,18 +4,23 @@
   "globalDependencies": [".env"],
   "pipeline": {
     "build": {
-      "env": ["A"]
+      "env": ["A"],
+      "dependsOn": ["^build"],
+      "outputs": [
+        "a_foo.txt"
+      ]
     },
     "lint": {
       "env": ["B"]
     },
     "devbroken": {
       "persistent": true,
-      "dependsOn": ["^devbroken"]
+      "dependsOn": ["^devbroken", "app-b#foox"]
     },
     "devworks": {
       "persistent": true
     },
-    "//#whatever": {}
+    "//#whatever": {},
+    "app-b#foo": {}
   }
 }
