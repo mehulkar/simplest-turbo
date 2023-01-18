@@ -4,23 +4,10 @@ set -e
 
 TURBO_SRC_DIR="$HOME/dev/vercel/turbo/cli"
 TURBO_FRESH_BIN="$TURBO_SRC_DIR/turbo"
-verbose="false"
-# task="build"
-task="devbroken"
 
-while [[ "$#" -gt 0 ]]; do
-    case $1 in
-        --verbose) verbose="true" ;;
-        *) echo "Unknown parameter passed: $1"; exit 1 ;;
-    esac
-    shift
-done
+task="build"
 
 echo "> Running turbo run $task from $TURBO_FRESH_BIN"
 echo "=========================="
-if [ "$verbose" == "true" ]; then
-  $TURBO_FRESH_BIN run "$task" --verbosity=3
-else
-  $TURBO_FRESH_BIN run "$task"
-fi
+$TURBO_FRESH_BIN run "$task" --dry-run
 echo "=========================="

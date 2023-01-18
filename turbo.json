@@ -22,6 +22,9 @@
     },
     "whatever": {},
     "//#whatever": {},
-    "app-b#foo": {}
+    "app-b#foo": {
+      "persistent": false,
+      "dependsOn": []
+    }
   }
 }
