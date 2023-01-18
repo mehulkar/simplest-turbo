@@ -20,6 +20,7 @@
     "devworks": {
       "persistent": true
     },
+    "whatever": {},
     "//#whatever": {},
     "app-b#foo": {}
   }
