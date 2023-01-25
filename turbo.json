@@ -20,7 +20,9 @@
     "devworks": {
       "persistent": true
     },
-    "whatever": {},
+    "whatever": {
+      "outputs": ["dist/**/**"]
+    },
     "//#whatever": {},
     "app-b#foo": {
       "persistent": false,
