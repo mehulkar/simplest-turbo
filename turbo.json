@@ -9,24 +9,6 @@
       "outputs": [
         "a_foo.txt"
       ]
-    },
-    "lint": {
-      "env": ["B"]
-    },
-    "devbroken": {
-      "persistent": true,
-      "dependsOn": ["^devbroken", "app-b#foo"]
-    },
-    "devworks": {
-      "persistent": true
-    },
-    "whatever": {
-      "outputs": ["dist/**/**"]
-    },
-    "//#whatever": {},
-    "app-b#foo": {
-      "persistent": false,
-      "dependsOn": []
     }
   }
 }
